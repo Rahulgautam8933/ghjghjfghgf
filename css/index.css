@@ -1,0 +1,168 @@
+/* Created by 🧚Somya🌹 */
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box ;
+}
+body,html{
+    margin:0px;
+    height:100vh;
+    width:100%;
+}
+canvas{
+    background:white;
+    width:100%;
+    position:fixed;
+    z-index:2;
+}
+#color_picker{
+    position:absolute ;
+    top:10px;
+    left:15px;
+    height:40px;
+    width:40px;
+    z-index:99;
+    box-shadow: -2px -4px 20px silver,
+    -1px -1px 12px silver;
+    border-radius:50%;
+    background:white;
+}
+#btn1,#btn2,#btn3{
+    position:absolute ;
+    height:30px;
+    width:30px;
+    border:4px solid white;
+    top:15px;
+    z-index:99;
+    border-radius:100px;
+    box-shadow:-1px -1px 12px silver;
+}
+#btn1{
+    background:blue;
+    right:10px;
+}
+#btn2{
+    background:lime;
+    right:50px;
+}
+#btn3{
+    background:red;
+    right:90px;
+}
+.active{
+    animation:scal 0.2s ease;
+}
+@keyframes scal{
+    100%{
+        transform:scale(0.8);
+    }
+}
+.c_picker{
+    position:absolute ;
+    font-size:20px;
+    font-style:italic ;
+    font-weight:bolder;
+    left:68px;
+    top:20px;
+    letter-spacing:2px;
+    color:red;
+    z-index:99;
+}
+.clear,.eraser,.bg_color,.undo,.add_text,.draw_brush,.bg_effect{
+    position:absolute ;
+    cursor:pointer;
+    height:30px;
+    width:90px;
+    left:15px;
+    font-size:16px;
+    background:white;
+    color:gray;
+    box-shadow:inset -2px -4px 2px silver,
+    -1px -1px 12px silver;
+    outline:none;
+    border:none;
+    border-radius:100px;
+    z-index:99;
+}
+.clear{
+    bottom:10px;
+}
+.undo{
+    bottom:50px;
+}
+.eraser{
+    bottom:90px;
+}
+.draw_brush{
+    bottom:130px;
+}
+.add_text{
+    bottom:170px;
+}
+.bg_color{
+    bottom:210px;
+}
+.bg_effect{
+    bottom:250px;
+}
+.size{
+    color:black;
+    background:white;
+    box-shadow:inset -2px -4px 2px silver,
+    -1px -1px 12px silver;
+    outline:none;
+    border:none;
+    border-radius:100px;
+    height:30px;
+    position:absolute ;
+    bottom:10px;
+    right:15px;
+    display:flex;
+    justify-content:center;
+    z-index:99;
+    padding: .9rem 1.5rem;
+}
+.draw_brush:hover{
+    color:white;
+    box-shadow:0 0 0 silver;
+    background:black;
+}
+.bg_color:hover{
+    color:white;
+    box-shadow:0 0 0 silver;
+    background:black;
+}
+.bg_effect:hover{
+    color:white;
+    box-shadow:0 0 0 silver;
+    background:black;
+}
+.add_text:hover{
+    color:white;
+    box-shadow:0 0 0 silver;
+    background:black;
+}
+.eraser:hover{
+    color:white;
+    box-shadow:0 0 0 silver;
+    background:black;
+}
+.pen{
+    color:gray;
+    position: absolute ;
+    z-index:90;
+    font-size:12px;
+    top:0;
+}
+#bgc_picker,#cr{
+    display:none;
+}
+.fa-eye-dropper{
+    color:red;
+    font-size:20px;
+    position:absolute ;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
